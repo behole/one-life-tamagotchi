@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/one-life-tamagotchi/static/css/main.fadc9eaa.css",
+    "main.js": "/one-life-tamagotchi/static/js/main.722b53a1.js",
+    "service-worker.js": "/one-life-tamagotchi/service-worker.js",
+    "index.html": "/one-life-tamagotchi/index.html",
+    "main.fadc9eaa.css.map": "/one-life-tamagotchi/static/css/main.fadc9eaa.css.map",
+    "main.722b53a1.js.map": "/one-life-tamagotchi/static/js/main.722b53a1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fadc9eaa.css",
+    "static/js/main.722b53a1.js"
+  ]
+}
