@@ -2,7 +2,7 @@
   "name": "one-life-tamagotchi",
   "version": "1.0.0",
   "description": "A one-life Tamagotchi game - when your pet dies, it's gone forever",
-  "homepage": "https://[your-github-username].github.io/one-life-tamagotchi",
+  "homepage": "https://behole.github.io/one-life-tamagotchi",
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
