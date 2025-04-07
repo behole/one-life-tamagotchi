@@ -1,0 +1,149 @@
+.status-display {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 320px;
+  font-family: 'Press Start 2P', monospace, sans-serif;
+  font-size: 10px;
+  border: 3px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.status-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 2px dashed #ccc;
+  padding-bottom: 10px;
+}
+
+.pet-name {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.pet-info {
+  display: flex;
+  gap: 10px;
+  font-size: 8px;
+}
+
+.needs-bars {
+  display: grid;
+  grid-gap: 8px;
+  margin-bottom: 15px;
+}
+
+.need-bar {
+  display: flex;
+  align-items: center;
+}
+
+.need-bar label {
+  flex: 0 0 80px;
+  font-size: 8px;
+  color: #444;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.bar-container {
+  flex: 1;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #999;
+}
+
+.bar-fill {
+  height: 100%;
+  background-color: #66cc66;
+  transition: width 0.3s ease;
+  position: relative;
+}
+
+.bar-fill::after {
+  content: attr(data-value);
+  position: absolute;
+  right: 5px;
+  top: -1px;
+  font-size: 7px;
+  color: #333;
+}
+
+/* Colors for different need bars */
+.need-bar:nth-child(1) .bar-fill {
+  background-color: #ff9933; /* Hunger - Orange */
+}
+
+.need-bar:nth-child(2) .bar-fill {
+  background-color: #99ccff; /* Energy - Light Blue */
+}
+
+.need-bar:nth-child(3) .bar-fill {
+  background-color: #ffcc66; /* Happiness - Yellow */
+}
+
+.health-bar {
+  background-color: #ff6666; /* Health - Red */
+}
+
+.need-bar:nth-child(5) .bar-fill {
+  background-color: #66ccff; /* Cleanliness - Cyan */
+}
+
+.need-bar:nth-child(6) .bar-fill {
+  background-color: #cc99ff; /* Discipline - Purple */
+}
+
+.pet-status {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-top: 2px dashed #ccc;
+  padding-top: 10px;
+}
+
+.status-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.status-label {
+  font-weight: bold;
+}
+
+.status-value {
+  text-transform: capitalize;
+}
+
+/* Dead pet styling */
+.status-display.dead {
+  background-color: #e0e0e0;
+  border-color: #999;
+  color: #666;
+}
+
+.death-notice {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.death-notice h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.death-notice p {
+  margin: 5px 0;
+  font-size: 9px;
+}

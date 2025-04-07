@@ -1,0 +1,98 @@
+/* Default background for the pet container */
+.pet-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: -1;
+  z-index: 0;
+}
+
+/* Default background - a simple pixel art room */
+.default-bg {
+  background-color: #aeddff;
+  background-image: 
+    /* Floor */
+    linear-gradient(0deg, 
+      #a67c52 0%, 
+      #a67c52 25%, 
+      transparent 25%
+    ),
+    /* Simple clouds */
+    radial-gradient(circle at 20% 35%, #ffffff 0%, #ffffff 10%, transparent 10%),
+    radial-gradient(circle at 30% 30%, #ffffff 0%, #ffffff 8%, transparent 8%),
+    radial-gradient(circle at 40% 40%, #ffffff 0%, #ffffff 12%, transparent 12%),
+    radial-gradient(circle at 80% 25%, #ffffff 0%, #ffffff 10%, transparent 10%),
+    radial-gradient(circle at 90% 30%, #ffffff 0%, #ffffff 8%, transparent 8%),
+    radial-gradient(circle at 70% 40%, #ffffff 0%, #ffffff 12%, transparent 12%);
+  image-rendering: pixelated;
+}
+
+/* Add a grid to the floor for pixel art feel */
+.default-bg::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 25%;
+  background-image: 
+    linear-gradient(90deg, 
+      rgba(0,0,0,0.1) 0%, 
+      rgba(0,0,0,0.1) 1px, 
+      transparent 1px
+    ),
+    linear-gradient(0deg, 
+      rgba(0,0,0,0.1) 0%, 
+      rgba(0,0,0,0.1) 1px, 
+      transparent 1px
+    );
+  background-size: 15px 15px;
+  image-rendering: pixelated;
+}
+
+/* Background for when pet is sleeping */
+.sleeping-bg {
+  background-color: #2a3b4d;
+  background-image: 
+    /* Floor */
+    linear-gradient(0deg, 
+      #4a3c2d 0%, 
+      #4a3c2d 25%, 
+      transparent 25%
+    ),
+    /* Stars */
+    radial-gradient(circle at 20% 15%, #ffffff 0%, #ffffff 1px, transparent 1px),
+    radial-gradient(circle at 30% 30%, #ffffff 0%, #ffffff 1px, transparent 1px),
+    radial-gradient(circle at 40% 10%, #ffffff 0%, #ffffff 1px, transparent 1px),
+    radial-gradient(circle at 50% 35%, #ffffff 0%, #ffffff 1px, transparent 1px),
+    radial-gradient(circle at 65% 25%, #ffffff 0%, #ffffff 1px, transparent 1px),
+    radial-gradient(circle at 75% 5%, #ffffff 0%, #ffffff 1px, transparent 1px),
+    radial-gradient(circle at 90% 15%, #ffffff 0%, #ffffff 1px, transparent 1px),
+    radial-gradient(circle at 95% 45%, #ffffff 0%, #ffffff 1px, transparent 1px),
+    radial-gradient(circle at 15% 45%, #ffffff 0%, #ffffff 1px, transparent 1px);
+  image-rendering: pixelated;
+}
+
+/* Background for when pet is dead */
+.death-bg {
+  background-color: #1a1a1a;
+  background-image: 
+    /* Floor */
+    linear-gradient(0deg, 
+      #333333 0%, 
+      #333333 25%, 
+      transparent 25%
+    ),
+    /* Fog/clouds */
+    linear-gradient(90deg,
+      rgba(50, 50, 50, 0.1) 0%,
+      rgba(50, 50, 50, 0.3) 50%,
+      rgba(50, 50, 50, 0.1) 100%
+    );
+  filter: grayscale(100%);
+  image-rendering: pixelated;
+}

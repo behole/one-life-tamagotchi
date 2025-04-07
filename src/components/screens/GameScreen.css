@@ -1,0 +1,114 @@
+.game-screen {
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Press Start 2P', monospace, sans-serif;
+}
+
+.game-container {
+  max-width: 500px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pet-container {
+  margin: 20px 0;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #aeddff; /* Sky blue background */
+  background-image:
+    /* Simple pixel grid for floor */
+    linear-gradient(0deg,
+      #a67c52 0%,
+      #a67c52 25%,
+      transparent 25%
+    );
+  background-size: 20px 20px;
+  border-radius: 8px;
+  border: 3px solid #ddd;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Death screen styles */
+.death-screen {
+  background-color: #222;
+  color: #ccc;
+}
+
+.death-container {
+  background-color: #333;
+  border: 3px solid #444;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding: 30px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.death-container h2 {
+  color: #999;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.death-cause {
+  color: #ff6666;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.memorial-pet {
+  margin: 20px 0;
+  filter: grayscale(100%);
+  opacity: 0.7;
+}
+
+.memorial-details {
+  margin: 20px 0;
+  opacity: 0.8;
+}
+
+.memorial-message {
+  color: #999;
+  font-size: 10px;
+  line-height: 1.6;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .game-container, .death-container {
+    max-width: 100%;
+    border-radius: 0;
+  }
+  
+  .pet-container {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+/* Pixelated rendering for retro feel */
+@media (min-resolution: 2dppx) {
+  .game-screen {
+    image-rendering: pixelated;
+  }
+}

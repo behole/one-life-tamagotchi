@@ -1,0 +1,167 @@
+.welcome-screen {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Press Start 2P', monospace, sans-serif;
+}
+
+.welcome-screen h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.intro-text {
+  margin-bottom: 30px;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.intro-text p {
+  margin-bottom: 10px;
+}
+
+.warning-text {
+  color: #ff3333;
+  font-weight: bold;
+}
+
+.pet-form {
+  margin-top: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.form-group input {
+  width: 200px;
+  padding: 10px;
+  font-size: 14px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  text-align: center;
+  font-family: 'Press Start 2P', monospace, sans-serif;
+}
+
+.welcome-screen button {
+  padding: 12px 24px;
+  background-color: #66cc66;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 4px 0 #339933;
+  font-family: 'Press Start 2P', monospace, sans-serif;
+  position: relative;
+  margin-top: 10px;
+}
+
+.welcome-screen button:hover {
+  background-color: #55bb55;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 #339933;
+}
+
+.welcome-screen button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #339933;
+}
+
+.warning-box {
+  background-color: #fff0f0;
+  border: 2px solid #ff6666;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 20px 0;
+  color: #cc0000;
+}
+
+.warning-box h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.warning-box p {
+  font-size: 10px;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+.confirm-button {
+  background-color: #ff6666 !important;
+  box-shadow: 0 4px 0 #cc3333 !important;
+}
+
+.confirm-button:hover {
+  background-color: #ff5555 !important;
+  box-shadow: 0 6px 0 #cc3333 !important;
+}
+
+.confirm-button:active {
+  box-shadow: 0 2px 0 #cc3333 !important;
+}
+
+/* Permanent death screen */
+.permanent-death {
+  background-color: #222;
+  color: #ccc;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.permanent-death h1 {
+  color: #999;
+  text-shadow: none;
+}
+
+.death-message {
+  font-size: 12px;
+  line-height: 1.6;
+  margin: 30px 0;
+}
+
+.death-message p {
+  margin-bottom: 10px;
+  color: #aaa;
+}
+
+.memorial {
+  margin: 40px 0;
+}
+
+.memorial-icon {
+  font-size: 50px;
+  animation: flicker 4s infinite alternate;
+}
+
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+  }
+  20%, 22%, 24%, 55% {
+    opacity: 0.5;
+  }
+}
+
+/* Pixel art styling */
+@media (min-resolution: 2dppx) {
+  .welcome-screen {
+    image-rendering: pixelated;
+  }
+}
